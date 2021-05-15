@@ -6,32 +6,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Disturbed // Band page</title>
-    <link rel="shortcut icon" href="assets/favicon.ico"">
-    <link rel="stylesheet" href="https://unpkg.com/bulma@0.9.0/css/bulma.min.css" />
+    <link rel="shortcut icon" href="assets/favicon.ico">
+    <link rel=" stylesheet" href="https://unpkg.com/bulma@0.9.0/css/bulma.min.css" />
     <link rel="stylesheet" href="css/index.css">
     <script defer src="https://use.fontawesome.com/releases/v5.0.10/js/all.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="/js/lang.js"></script>
 </head>
 
 <body>
-
-<!--
-    <div class="modal">
-        <div class="modal-background"></div>
-        <div class="modal-content">
-            <article class="message is-warning">
-                <div class="message-header">
-                    <p>Warning</p>
-                    <button class="delete modal-closer" aria-label="delete"></button>
-                </div>
-                <div class="message-body">
-                    The section of the site you want to get to is <strong>not finished yet</strong>. We apologize for
-                    that.
-                </div>
-            </article>
-        </div>
-        <button class="modal-close is-large" aria-label="close"></button>
-    </div>
--->
 
     <nav class="navbar is-dark">
         <div class="navbar-brand">
@@ -48,34 +31,33 @@
 
         <div id="navbarExampleTransparentExample" class="navbar-menu">
             <div class="navbar-start">
-                <p class="navbar-item not-finished" href="">
+                <a key="news" class="navbar-item not-finished lang" href="#">
                     News
-                </p>
-                <p class="navbar-item" href="">
+                </a>
+                <a key="music" class="navbar-item lang" href="#">
                     Music
-                </p>
-                <p class="navbar-item" href="">
+                </a>
+                <a key="tour" class="navbar-item lang" href="#">
                     Tour
-                </p>
+                </a>
                 <div class="navbar-item has-dropdown is-hoverable">
-                    <p class="navbar-link" href="">
+                    <a key="more" class="navbar-link lang" href="#">
                         More
-                    </p>
+                    </a>
                     <div class="navbar-dropdown is-boxed">
-                        <p class="navbar-item" href="">
+                        <a key="videos" class="navbar-item lang" href="#">
                             Videos
-                        </p>
-                        <p class="navbar-item" href="">
-                            Pre-save
-                        </p>
-                        <p class="navbar-item" href="">
+                        </a>
+                        <a key="shop" class="navbar-item lang" href="#">
                             Shop
-                        </p>
+                        </a>
                     </div>
                 </div>
             </div>
 
             <div class="navbar-end">
+                <div class="navbar-item"><button id="en" class="button is-black is-small translate">en</button></div>
+                <div class="navbar-item"><button id="ru" class="button is-black is-small translate">ru</button></div>
             </div>
         </div>
     </nav>
@@ -88,18 +70,8 @@
 
     <section class="section">
         <div class="container has-text-centered">
-            <h2 class="title">The Disturbed</h2>
-            <p>Disturbed is an American heavy metal band formed in 1994 (named Brawl at this time) from Chicago,
-                Illinois. In 1996 singer Erich Awalt was replaced by David Draiman and the band was renamed “Disturbed”.
-
-                Disturbed is most famously known for their songs “Down With The Sickness” and their cover of “The Sound
-                of Silence”. Disturbed went on hiatus in July 2011, to get a break from touring, but started to miss it
-                and engaged in some side projects; Device, Fight Or Flight, Adrenaline Mob and Art Of Anarchy.
-                Disturbed returned in 2015 announcing their return with their new album – Immortalized, which was
-                recorded in secret and releasing the first single from the album, “The Vengeful One,” in advance.
-                Immortalized was Disturbed’s fifth straight No. 1-debuting studio album on Billboard 200, making them
-                the third group in history to have achieved five consecutive studio albums at No. 1. The other two being
-                Metallica and Dave Matthews Band.</p>
+            <h2 key="the title" class="title lang">The Disturbed</h2>
+            <p key="the discription" class="lang">Disturbed is an American heavy metal band formed in 1994 (named Brawl at this time) from Chicago, Illinois. In 1996 singer Erich Awalt was replaced by David Draiman and the band was renamed “Disturbed”. Disturbed is most famously known for their songs “Down With The Sickness” and their cover of “The Sound of Silence”. Disturbed went on hiatus in July 2011, to get a break from touring, but started to miss it and engaged in some side projects; Device, Fight Or Flight, Adrenaline Mob and Art Of Anarchy. Disturbed returned in 2015 announcing their return with their new album – Immortalized, which was recorded in secret and releasing the first single from the album, “The Vengeful One,” in advance. Immortalized was Disturbed’s fifth straight No. 1-debuting studio album on Billboard 200, making them the third group in history to have achieved five consecutive studio albums at No. 1. The other two being Metallica and Dave Matthews Band.</p>
 
             <div class="columns is-centered" style="padding: 2rem">
                 <div class="column">
@@ -202,196 +174,22 @@
                 </div>
             </div>
         </div>
-        </div>
-    </section>
-
-    <!-- <section class="section">
-        <div class="container has-text-centered">
-            <h2 class="title">Tour Dates</h2>
-
-            <div class="tile is-ancestor">
-                <div class="tile is-parent">
-                    <article class="tile is-child box">
-                        <figure class="image">
-                            <img
-                                src="https://images.pexels.com/photos/374710/pexels-photo-374710.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260">
-                        </figure>
-                        <p class="title">New York</p>
-                        <p class="subtitle">MAY 01</p>
-                        <a class="button">Buy Tickets</a>
-                    </article>
-                </div>
-                <div class="tile is-parent">
-                    <article class="tile is-child box">
-                        <figure class="image">
-                            <img
-                                src="https://images.pexels.com/photos/374710/pexels-photo-374710.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260">
-                        </figure>
-                        <p class="title">New York</p>
-                        <p class="subtitle">MAY 02</p>
-                        <a class="button">Buy Tickets</a>
-                    </article>
-                </div>
-                <div class="tile is-parent">
-                    <article class="tile is-child box">
-                        <figure class="image">
-                            <img
-                                src="https://images.pexels.com/photos/374710/pexels-photo-374710.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260">
-                        </figure>
-                        <p class="title">New York</p>
-                        <p class="subtitle">MAY 03</p>
-                        <a class="button">Buy Tickets</a>
-                    </article>
-                </div>
-                <div class="tile is-parent">
-                    <article class="tile is-child box">
-                        <figure class="image">
-                            <img
-                                src="https://images.pexels.com/photos/374710/pexels-photo-374710.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260">
-                        </figure>
-                        <p class="title">New York</p>
-                        <p class="subtitle">MAY 04</p>
-                        <a class="button">Buy Tickets</a>
-                    </article>
-                </div>
-                <div class="tile is-parent">
-                    <article class="tile is-child box">
-                        <figure class="image">
-                            <img
-                                src="https://images.pexels.com/photos/374710/pexels-photo-374710.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260">
-                        </figure>
-                        <p class="title">New York</p>
-                        <p class="subtitle">MAY 05</p>
-                        <a class="button">Buy Tickets</a>
-                    </article>
-                </div>
-            </div>
-
-            <div class="tile is-ancestor">
-                <div class="tile is-parent">
-                    <article class="tile is-child box">
-                        <figure class="image">
-                            <img
-                                src="https://images.pexels.com/photos/374710/pexels-photo-374710.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260">
-                        </figure>
-                        <p class="title">New York</p>
-                        <p class="subtitle">MAY 07</p>
-                        <a class="button">Buy Tickets</a>
-                    </article>
-                </div>
-                <div class="tile is-parent">
-                    <article class="tile is-child box">
-                        <figure class="image">
-                            <img
-                                src="https://images.pexels.com/photos/374710/pexels-photo-374710.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260">
-                        </figure>
-                        <p class="title">New York</p>
-                        <p class="subtitle">MAY 08</p>
-                        <a class="button">Buy Tickets</a>
-                    </article>
-                </div>
-                <div class="tile is-parent">
-                    <article class="tile is-child box">
-                        <figure class="image">
-                            <img
-                                src="https://images.pexels.com/photos/374710/pexels-photo-374710.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260">
-                        </figure>
-                        <p class="title">New York</p>
-                        <p class="subtitle">MAY 09</p>
-                        <a class="button">Buy Tickets</a>
-                    </article>
-                </div>
-                <div class="tile is-parent">
-                    <article class="tile is-child box">
-                        <figure class="image">
-                            <img
-                                src="https://images.pexels.com/photos/374710/pexels-photo-374710.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260">
-                        </figure>
-                        <p class="title">New York</p>
-                        <p class="subtitle">MAY 10</p>
-                        <a class="button">Buy Tickets</a>
-                    </article>
-                </div>
-                <div class="tile is-parent">
-                    <article class="tile is-child box">
-                        <figure class="image">
-                            <img
-                                src="https://images.pexels.com/photos/374710/pexels-photo-374710.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260">
-                        </figure>
-                        <p class="title">New York</p>
-                        <p class="subtitle">MAY 11</p>
-                        <a class="button">Buy Tickets</a>
-                    </article>
-                </div>
-            </div>
-        </div>
-    </section> -->
-
-    <section class="section">
-        <div class="container has-text-centered">
-            <h2 class="title">Contact</h2>
-
-            <form>
-                <div class="field is-horizontal">
-                    <div class="field-body">
-                        <div class="field">
-                            <p class="control has-icons-left">
-                                <input class="input" type="text" placeholder="Name">
-                                <span class="icon is-small is-left">
-                                    <i class="fas fa-user"></i>
-                                </span>
-                            </p>
-                        </div>
-                        <div class="field">
-                            <p class="control has-icons-left has-icons-right">
-                                <input class="input" type="email" placeholder="Email">
-                                <span class="icon is-small is-left">
-                                    <i class="fas fa-envelope"></i>
-                                </span>
-                            </p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="field is-horizontal">
-                    <div class="field-body">
-                        <div class="field">
-                            <div class="contrsol">
-                                <textarea class="textarea" placeholder="Message us"></textarea>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="field is-horizontal">
-                    <div class="field-body">
-                        <div class="field">
-                            <div class="control">
-                                <button class="button is-primary">
-                                    Send message
-                                </button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </form>
-        </div>
     </section>
 
     <footer class="footer">
         <div class="container">
             <div class="content has-text-centered">
                 <p>
-                    <a href="https://www.facebook.com/Disturbed/">
+                    <a class="socialbar" href="https://www.facebook.com/Disturbed/">
                         <i class="fab fa-facebook-square fa-2x"></i>
                     </a>
-                    <a href="https://twitter.com/disturbed">
+                    <a class="socialbar" href="https://twitter.com/disturbed">
                         <i class="fab fa-twitter-square fa-2x"></i>
                     </a>
-                    <a href="https://www.instagram.com/disturbed/">
+                    <a class="socialbar" href="https://www.instagram.com/disturbed/">
                         <i class="fab fa-instagram fa-2x"></i>
                     </a>
-                    <a href="https://www.youtube.com/DisturbedTV">
+                    <a class="socialbar" href="https://www.youtube.com/DisturbedTV">
                         <i class="fab fa-youtube fa-2x"></i>
                     </a>
                 </p>
@@ -400,11 +198,8 @@
             </div>
         </div>
     </footer>
-    
+
     <script src="js/burger.js"></script>
-    <!--
-    <script src="js/modal.js"></script>
-    -->
 </body>
 
 </html>

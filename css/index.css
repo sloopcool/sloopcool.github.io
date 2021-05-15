@@ -1,3 +1,7 @@
 .not-finished, .navbar-item{
     cursor: pointer;
 }
+
+.socialbar {
+    color: black;
+}
